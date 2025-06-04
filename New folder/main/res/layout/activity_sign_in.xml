@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CFCCCC"
+    android:gravity="center"
+    android:padding="50dp"
+    tools:context=".SignInActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotticycle"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/chat"
+        tools:ignore="MissingConstraints">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <EditText
+
+        android:id="@+id/etEmail"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Email"
+        android:padding="8dp"
+        android:background="#fff"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password"
+        android:padding="8dp"
+        android:background="#fff"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:id="@+id/SignupId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click for signup"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="right"
+        />
+
+    <Button
+        android:id="@+id/goid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="SignIn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#F8F7F7"
+            android:drawableLeft="@drawable/google"
+            android:padding="15dp"
+            android:text="Google"
+            android:textColor="#150202"
+
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btn_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F8F7F7"
+            android:drawableLeft="@drawable/facebook"
+            android:padding="15dp"
+            android:text="facebook"
+            android:textColor="#150202"
+            android:textSize="10dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btnPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up with phone"
+        android:textColor="#009688"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
+
